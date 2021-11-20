@@ -10,15 +10,15 @@ void PrimeNumbers(int natural_numbers) {
       break;
     }
   }
-if (natural_numbers == 1 || natural_numbers == 0) {
-  if (natural_numbers == 1) { 
-    isPrime = false;
-    std::cout << "1 is a not prime number" << std::endl;
-  
-  } else if (natural_numbers == 0) {
-    isPrime = false;
-    std::cout << "0 is a not prime number" << std::endl;
-  }
+  if (natural_numbers == 1 || natural_numbers == 0) {
+    if (natural_numbers == 1) {
+      isPrime = false;
+      std::cout << "1 is a not prime number" << std::endl;
+
+    } else if (natural_numbers == 0) {
+      isPrime = false;
+      std::cout << "0 is a not prime number" << std::endl;
+    }
   } else {
     if (count == 0) {
       std::cout << natural_numbers << " is a prime number" << std::endl;
@@ -29,18 +29,16 @@ if (natural_numbers == 1 || natural_numbers == 0) {
 }
 
 int main() {
-  int number{0}, i{0},n{0};
+  int number{0}, i{0}, n{0};
   // std::cout << "How many numbers would you loke to introduce:";
   std::cin >> number;
   int natural_numbers[number];
   // std::cout << "Introduzca los número que desee:";
 
-  for (i = 0; i < number; i++ ) {
+  for (i = 0; i < number; i++) {
     std::cin >> natural_numbers[i];
     PrimeNumbers(natural_numbers[i]);
-
   }
-  
-  
+
   return 0;
 }
