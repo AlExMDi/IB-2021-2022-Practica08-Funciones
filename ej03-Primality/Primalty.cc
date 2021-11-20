@@ -38,9 +38,10 @@ void PrimeNumbers(int natural_numbers) {
 
     int main() {
       int natural_numbers{0}, number{0}, count{0};
-      std::cin >> number;
-      std::cin >> natural_numbers;
       // std::cout << "How many numbers would you loke to introduce:"
+      std::cin >> number;
+       // std::cout << "Introduce the numbers:"
+      std::cin >> natural_numbers;
       PrimeNumbers(natural_numbers);
 
       return 0;
