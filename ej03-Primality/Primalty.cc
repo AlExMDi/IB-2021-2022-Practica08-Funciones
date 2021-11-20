@@ -13,11 +13,11 @@ void PrimeNumbers(int natural_numbers) {
   if (natural_numbers == 1 || natural_numbers == 0) {
     if (natural_numbers == 1) {
       isPrime = false;
-      std::cout << "1 is a not prime number" << std::endl;
+      std::cout << "1 is not a prime number" << std::endl;
 
     } else if (natural_numbers == 0) {
       isPrime = false;
-      std::cout << "0 is a not prime number" << std::endl;
+      std::cout << "0 is not a prime number" << std::endl;
     }
   } else {
     if (count == 0) {
