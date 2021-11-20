@@ -10,7 +10,7 @@ void GenerateNumbers(int number) {
 void PrimeNumbers(int natural_numbers) {
   int number{0},count{0};
   bool isPrime = true;
-  std::cin >> number;
+
   int arr[number];
   for (int i = 0; i < number; i++) 
   // std::cin >> arr[i];
@@ -38,6 +38,7 @@ void PrimeNumbers(int natural_numbers) {
 
     int main() {
       int natural_numbers{0}, number{0}, count{0};
+      std::cin >> number;
       // std::cout << "How many numbers would you loke to introduce:"
       PrimeNumbers(natural_numbers);
 
