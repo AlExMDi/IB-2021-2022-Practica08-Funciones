@@ -21,7 +21,7 @@ double Exponential(int number, double x) {
     suma = 1 + x * suma / i;
   }
   if (number == 0) {
-    std::cout << "With " << number << " term(s) we get 0.00000000.";
+    std::cout << "With " << number << " term(s) we get 0.0000000000.";
     std::cout << std::endl;
 
   } else {
