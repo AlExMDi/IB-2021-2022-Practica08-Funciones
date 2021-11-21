@@ -1,22 +1,28 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Informática Básica
+ *
+ * @author Alexander Morales Díaz
+ * @date 19.nov.2021
+ * @brief Practica 8. Ejercicio 5
+ * Introduce two numbers and it will substract their 
+ * two harmonic numbers
+ *
+ */
+
+
 #include <iostream>
 #include <iomanip>
 
-double nthHarmonic(int number1) {
+double nthHarmonic(const int number) {
   double harmonic = 1.00;
-  if (number1 == 0) {
-  harmonic = 0;
-  } else {
-  for (int i = 2; i <= number1; i++) {
+  for (int i = 1; i <= number; i++) {
     harmonic += (double)1 / i;
-  
-  }
-
-//   std::cout << std::fixed << std::setprecision(4) << harmonic << std::endl;
-  
   }
   return harmonic;
 }
-
 
 
 int main() {
