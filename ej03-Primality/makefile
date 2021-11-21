@@ -1,6 +1,6 @@
-Practica08:Primality.o
+Practica08: Primality.o
 
-Primality.o:Primality.cc
+Primality.o: Primality.cc
 	g++ -o Primality.out Primality.cc
 
 clean:
