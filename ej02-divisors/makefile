@@ -1,4 +1,4 @@
-Practica08: divisors.o
+Practica08:divisors.o
 
 divisors.o:divisors.cc
 	g++ -o divisors.out divisors.cc
