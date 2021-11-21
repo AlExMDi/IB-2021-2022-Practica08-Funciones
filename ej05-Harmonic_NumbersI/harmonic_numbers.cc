@@ -8,25 +8,22 @@
  * @date 19.nov.2021
  * @brief Practica 8. Ejercicio 5
  * Introduce a number and it will print it's harmonic number
- * 
-*/
+ *
+ */
 
-#include <iostream>
 #include <bits/stdc++.h>
-
+#include <iostream>
 
 double nthHarmonic(const int number) {
   double harmonic = 1.00;
   for (int i = 2; i <= number; i++) {
     harmonic += (double)1 / i;
-  
   }
-  if (number == 0){
+  if (number == 0) {
     std::cout << "0.0000" << std::endl;
   } else {
-  std::cout << std::fixed << std::setprecision(4) << harmonic << std::endl;
-  
-}
+    std::cout << std::fixed << std::setprecision(4) << harmonic << std::endl;
+  }
   return harmonic;
 }
 
