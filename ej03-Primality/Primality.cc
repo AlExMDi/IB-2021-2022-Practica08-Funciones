@@ -1,3 +1,16 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Informática Básica
+ *
+ * @author Alexander Morales Díaz
+ * @date 19.nov.2021
+ * @brief Practica 8. Ejercicio 2
+ * Introduce different numbers and it will tell you if they are or not primes
+ */
+
+
 #include <iostream>
 #include <cmath>
 
