@@ -7,7 +7,7 @@
  * @author Alexander Morales Díaz
  * @date 19.nov.2021
  * @brief Practica 8. Ejercicio 2
- * Introduce different numbers and their divisors will appear.
+ * Introduce different numbers and their divisors will appear
  */
 
 #include <cmath>
