@@ -29,7 +29,8 @@ void Order(int number) {
 
 int main() {
   int number{0};
-  while (std::cin >> number) Order(number);
+  while (std::cin >> number) 
+    Order(number);
 
   return 0;
 }
