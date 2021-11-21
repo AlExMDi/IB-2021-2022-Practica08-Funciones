@@ -6,7 +6,7 @@
  *
  * @author Alexander Morales Díaz
  * @date 19.nov.2021
- * @brief Practica 8. Ejercicio 2
+ * @brief Practica 8. Ejercicio 10
  * Introduce a sequence of parentheses and it will say if it is balance or not
  */
 
