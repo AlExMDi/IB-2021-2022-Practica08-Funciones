@@ -1,14 +1,24 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Informática Básica
+ *
+ * @author Alexander Morales Díaz
+ * @date 19.nov.2021
+ * @brief Practica 8. Ejercicio 5
+ * Introduce a number and it will print it's harmonic number
+ * 
+*/
+
 #include <iostream>
 #include <bits/stdc++.h>
 
-// falta redondear
-// Problema con el número 0s
-// Y cuando no tiene decimales añadir cuatro 0, si tiene un decimal 3, etc.
 
 double nthHarmonic(const int number) {
-  float harmonic = 1.00;
+  double harmonic = 1.00;
   for (int i = 2; i <= number; i++) {
-    harmonic += (float)1 / i;
+    harmonic += (double)1 / i;
   
   }
   if (number == 0){

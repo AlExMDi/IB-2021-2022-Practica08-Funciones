@@ -1,3 +1,17 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Informática Básica
+ *
+ * @author Alexander Morales Díaz
+ * @date 19.nov.2021
+ * @brief Practica 8. Ejercicio 4
+ * Introduce a sentence or a word and if a appear an 'a' it will
+ * print yes if not, no
+
+*/
+
 #include <cstring>
 #include <iostream>
 
