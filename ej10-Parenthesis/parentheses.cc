@@ -1,3 +1,16 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Informática Básica
+ *
+ * @author Alexander Morales Díaz
+ * @date 19.nov.2021
+ * @brief Practica 8. Ejercicio 2
+ * Introduce a sequence of parentheses and it will say if it is balance or not
+ */
+
+
 #include <iostream>
 
 bool Balanced(char expression[]) {
