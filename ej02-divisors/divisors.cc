@@ -11,22 +11,26 @@
 */
 
 #include <iostream>
+#include <cmath>
 
 void Order(int number) {
-  while (std::cin >> number) {
     std::cout << "divisors of " << number << ": ";
-    for (int i = 1; i <= number; ++i){
+    for (int i = 1; i < sqrt(number); i++) {
       if (number % i == 0) {
         std::cout << i << " ";
       }
-    } 
-  std::cout << std::endl;  
+    }
+      for (int j = sqrt(number); j > 0; --j)
+        if (number % j == 0) {
+          std::cout << number/j << " ";
+        }
+    std::cout << std::endl;
   }
-} 
 
 
 int main() {
   int number{0};
+  while (std::cin >> number) 
   Order(number);
 
   return 0;
