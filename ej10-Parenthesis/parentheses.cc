@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stdbool.h>
-#include <stdio.h>
 
 bool Balanced(char expression[]) {
   bool balance = true;
@@ -31,9 +29,9 @@ int main() {
   std::cin >> expression1;
 
   if (Balanced(expression1)) {
-    std::cout << "Balanced \n";
+    std::cout << "yes \n";
   } else {
-    std::cout << "Not Balanced \n";
+    std::cout << "no \n";
   }
   return 0;
 }
