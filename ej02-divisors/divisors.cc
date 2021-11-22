@@ -10,8 +10,8 @@
  * Introduce different numbers and their divisors will appear
  */
 
-#include <cmath>
 #include <iostream>
+#include <cmath>
 
 void Order(int number) {
   std::cout << "divisors of " << number << ":";
