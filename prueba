@@ -1,0 +1,211 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyODe6NUNEkyBziY1MOnMQKt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU",
+    "gpuClass": "standard"
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/alu0101463018/IB-2021-2022-Practica08-Funciones/blob/main/prueba\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%writefile hello.cc\n",
+        "#include <iostream>\n",
+        "    int\n",
+        "    main()\n",
+        "{\n",
+        "    std::cout << \"Welcome To GeeksforGeeks\\n\";\n",
+        "    return 0;\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "wo8pkBhdUMpd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%lsmagic"
+      ],
+      "metadata": {
+        "id": "KNCKm3-NWfEB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%shell\n",
+        "g++  hello.cc\n",
+        "./a.out"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p0k7n7AKWxgw",
+        "outputId": "8ec10d7a-717a-472c-ad77-4fe659ee7d6e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Welcome To GeeksforGeeks\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              ""
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Tema 1.1 Introducción a los Sistemas Operativos \n",
+        "### ¿Qué es un Sistema Operativo?\n",
+        "Un sistema operativo es el software principal o conjunto de programas de un sistema  informático que gestiona los recursos del hardware y provee servicios a los programas de  aplicación de software. Es decir, el SO, actúa como agente entre el hardware de cada  dispositivo y las aplicaciones de terceros, esto permite que los desarrolladores se abstraiga de  la gestión de la memoria, la pantalla, etc. Permitiendo de esta forma una mayor simplicidad  entre los sistemas informáticos. "
+      ],
+      "metadata": {
+        "id": "le_JHtCDXVJH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%writefile prueba.cc\n",
+        "#include <iostream>\n",
+        "int main() {\n",
+        "  int number, number2;\n",
+        "  std::cout << \"Introduzca los numeros: \";\n",
+        "  std::cin >> number >> number2;\n",
+        "  int suma;\n",
+        "  suma = number + number2;\n",
+        "  std::cout << \"Suma: \" << suma << std::endl;\n",
+        "  return 0;\n",
+        "}"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N2quNrdTXdyT",
+        "outputId": "99d5da89-52b0-4a60-91e0-2fc7b330dfeb"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Overwriting prueba.cc\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%shell\n",
+        "g++ prueba.cc\n",
+        "./a.out"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bfYKIvNZX6KC",
+        "outputId": "0517c252-254f-4e73-eb40-b516b7a1742a"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Introduzca los numeros: 4\n",
+            "5\n",
+            "Suma: 9\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              ""
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "$2+x = 4$"
+      ],
+      "metadata": {
+        "id": "hrB79e9qYzi0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cd /content"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iR8BvAZrY6cQ",
+        "outputId": "f9218990-43ef-4e14-8b9d-1a2156645e04"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/content\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
